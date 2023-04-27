@@ -2,6 +2,9 @@
 
 import random
 
+import jogos
+
+
 def jogar():
     print("*********************************")
     print("Bem vindo ao jogo de Adivinhação!")
@@ -49,6 +52,15 @@ def jogar():
             pontos = pontos - pontos_perdidos
 
     print("Fim do jogo")
+    jogar_novamente()
+
+def jogar_novamente():
+    print("Jogar novamente? ")
+    resposta_jogar_novamente = int(input("1- SIM/ 2- NÃO "))
+    if resposta_jogar_novamente == 1:
+        jogar()
+    elif resposta_jogar_novamente == 2:
+        jogos.jogar()
 
 if(__name__ == "__main__"):
     jogar()

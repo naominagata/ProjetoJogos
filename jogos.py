@@ -5,10 +5,16 @@ import adivinhacao
 
 def jogar():
     print("*********************************")
-    print("***Bem vindo ao jogo da Forca!***")
+    print("***Bem vindo!***")
     print("*********************************")
 
-    print("Fim do jogo")
+    print("ESCOLHER ")
+    escolha = int(input("1- FORCA / 2- ADIVINHACAO "))
+    if escolha == 1:
+        forca.jogar()
+    else:
+        adivinhacao.jogar()
+
 
 if(__name__ == "__main__"):
     jogar()
